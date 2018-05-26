@@ -256,6 +256,37 @@ This is our first commit with multiple parents! How can we refer to those?
 
 ## Rebasing
 
+Merging is not the only way of integrating changes from one branch into another.
+Rebasing is the act of reapplying commits from one branch onto another.
+
+Let's roll back `master` to where we were before merging and rebase changes from
+the `experiment` branch to `master`.
+
+```
+git checkout master
+git reset --hard HEAD^
+git checkout experiment
+git rebase master
+```
+
+Rebase conflicts as before and then conclude the rebase process with `git rebase
+--continue`.
+
+```
+vim animals
+git add animals
+git rebase --continue
+```
+
+> Question: why is it called --continue and no --finish?
+
+Now take a look at the log and reflog!
+
+```
+gl
+git reflog
+```
+
 
 
 ## Questions
