@@ -278,7 +278,7 @@ git add animals
 git rebase --continue
 ```
 
-> Question: why is it called --continue and no --finish?
+> Question: why is it called --continue and not --finish?
 
 Now take a look at the log and reflog!
 
@@ -287,7 +287,27 @@ gl
 git reflog
 ```
 
+Rebase was in fact a three step process:
+ - moving to `master`
+ - reapplying the commits (only one) from the `experiment` branch
+ - moving the `experiment` branch
 
+The middle step of reapplying commits can be done with the `cherry-pick` command,
+but we're not going to go into details of that now (see the manual!).
+
+## Merging vs. rebasing
+
+There's no ultimate answer to which to use; it depends.
+
+Rebasing leaves behind a clean and easy to understand line of commits, however
+their origin (the fact that they came from an other branch) is lost in the process.
+
+Rebase also creates new commit objects instead of reusing the original commits.
+It means that every reference (e.g. tag) pointing to the original commits
+will not be part of the main line.
+
+The preferred way of integrating changes from one branch to another (and
+especially to `master`) should be clearly defined in the projects workflow.
 
 ## Questions
 
