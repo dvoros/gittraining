@@ -49,6 +49,9 @@ cat .git/refs/heads/master
 
 That's our commit hash. See for yourself in the log!
 
+> A branch is nothing more than a reference under `.git/refs/heads`. You can create
+branches by creating files there, or using the update-ref  command.
+
 Whenever we moved HEAD (reset, remember?), we were in fact moving the branch!
 Let's create another commit and see:
 
@@ -87,6 +90,7 @@ Let's say we want to start experimenting with something new without endangering
 our maser branch. We're going to create a new branch called experiment:
 
 ```
+# git update-ref refs/heads/experiment HEAD
 git branch experiment
 ```
 
@@ -102,6 +106,7 @@ We can't switch to a new branch with `reset` since that moved the branch too. To
 move HEAD only, use the `checkout` command.
 
 ```
+# git symbolic-ref HEAD refs/heads/experiment
 git checkout experiment
 ```
 
