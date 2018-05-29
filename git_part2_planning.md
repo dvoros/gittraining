@@ -329,3 +329,11 @@ git checkout other-branch
 HEAD^
 HEAD~
 ```
+
+3) True or false?
+
+- A) rebase(a, b) conflicts => merge(a, b) conflicts
+- B) rebase(a, b) conflicts => rebase(b, a) conflicts
+- C) merge(a, b) conflicts => merge(b, a) conflicts
+- D) merge(a, b) conflicts => rebase(a, b) conflicts
+- E) rebase(a, b) don't conflict => merge(a, b) don't conflict
