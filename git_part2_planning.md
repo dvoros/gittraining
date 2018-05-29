@@ -332,6 +332,9 @@ HEAD~
 
 3) True or false?
 
+> rebase(a, b) = checkout 'a' and rebase on 'b'
+> merge(a, b) = checkout 'a' and merge 'b' into it
+
 - A) rebase(a, b) conflicts => merge(a, b) conflicts
 - B) rebase(a, b) conflicts => rebase(b, a) conflicts
 - C) merge(a, b) conflicts => merge(b, a) conflicts
