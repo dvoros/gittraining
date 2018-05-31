@@ -1,4 +1,4 @@
-# Git part 2 - branching and remotes
+# Git part 2 - branching
 
 ## Recap
 
