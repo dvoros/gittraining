@@ -253,10 +253,11 @@ https://github.com/dvoros/dotfiles/blob/master/.shrc
 
 Other stuff we didn't have time to discuss:
 
-•	Advanced merging with renameLimit, rename-threshold and rerere
-•	Handling tags from multiple remotes
+- Advanced merging with renameLimit, rename-threshold and rerere
+- Handling tags from multiple remotes
 https://stackoverflow.com/questions/22108391/git-checkout-a-remote-tag-when-two-remotes-have-the-same-tag-name
 Edit .git/config with another `fetch=...` line
-•	annotated tags
-•	git hash VS sha1
-•	git submodule
+- annotated tags
+- git hash VS sha1
+- git submodule
+- git-crypt
