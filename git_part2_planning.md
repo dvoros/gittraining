@@ -326,8 +326,8 @@ git checkout other-branch
 2) What's the difference?
 
 ```
-HEAD^
-HEAD~
+HEAD^2
+HEAD~2
 ```
 
 3) True or false?

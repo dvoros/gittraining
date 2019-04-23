@@ -177,6 +177,7 @@ git push -f otherrepo HEAD:master
 ## Use browser plugin to view patches in the browser
 
 For chrome: https://chrome.google.com/webstore/detail/git-patch-viewer/hkoggakcdopbgnaeeidcmopfekipkleg
+For firefox: https://addons.mozilla.org/en-US/firefox/addon/ffdiff
 
 ## Hooks
 
@@ -229,6 +230,8 @@ https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql
 
 https://github.com/apache/hive/blob/5e2a530cc857c36dc97de6f5bec4003c569d00bd/ql/src/java/org/apache/hadoop/hive/ql/metadata/Hive.java#L5284
 
+Kucsi: Press `y` on Github! Wow!
+
 ## Diff options
 
 View character diffs instead of whole lines:
@@ -260,4 +263,8 @@ Edit .git/config with another `fetch=...` line
 - annotated tags
 - git hash VS sha1
 - git submodule
+- sparse checkout? clone only a part of the repo -> https://git-scm.com/docs/git-read-tree#_sparse_checkout
 - git-crypt
+- git lfs
+- rebase stragety + options
+- change user for a single commmit: `git -c user... commit ...`?
