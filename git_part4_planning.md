@@ -55,7 +55,12 @@ Use it to squash/split your commits to look more organized!
 git rebase -i @{u}
 ```
 
-!!! first command reword => squashed commit
+First command reword => squashed commit. Fixed in https://github.com/git/git/commit/a9279c678588
+
+See also:
+```
+git config --global rebase.autoSquash true
+```
 
 ### Add
 
